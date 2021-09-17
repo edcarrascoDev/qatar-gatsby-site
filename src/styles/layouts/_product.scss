@@ -1,0 +1,120 @@
+.single-product {
+
+    &__main {
+        padding: calcRem(150px) 0 calcRem(80px);
+        background: $light-color;
+    }
+
+    &__content {
+        position: relative;
+    }
+
+    &__specs {
+        .headline {
+            margin-bottom: 0;
+        }
+    }
+
+    &__actions {
+        display: flex;
+
+        .quantity {
+            margin-right: calcRem(15px);
+        }
+
+        .mdc-button {
+            width: 100%;
+        }
+
+        > span {
+            font-size: 1.1rem;
+            display: block;
+            margin-top: calcRem(20px);
+
+            > a {
+                text-decoration: underline;
+                font-weight: bold;
+                color: $secondary-color;
+                font-size: 1.8rem;
+            }
+        }
+    }
+
+    &__sku {
+        display: block;
+        font-size: calcRem(18px);
+    }
+
+    &__price {
+        font-size: 1.5rem;
+        font-weight: 500;
+        margin: calcRem(22px) 0 calcRem(30px);
+        color: $secondary-color;
+
+        del {
+            opacity: 0.5;
+            color: $primary-color;
+            font-size: 1rem;
+        }
+
+        ins {
+            text-decoration: none;
+        }
+    }
+
+    &__brand {
+        img {
+            max-width: 150px;
+        }
+    }
+
+
+    &__details {
+        padding: calcRem(70px) 0 calcRem(40px);
+    }
+
+    &__form {
+        .mdc-layout-grid {
+            border-top: 1px solid $light-grey;
+            padding: calcRem(70px) 0 calcRem(120px);
+        }
+    }
+
+    @include media-breakpoint-up(sm) {
+        &__specs, &__gallery {
+            flex: 1 1 50%;
+            max-width: 50%;
+        }
+
+        &__content {
+            display: flex;
+        }
+    }
+
+    @include media-breakpoint-up(md) {
+        &__specs {
+            flex: 1 1 35%;
+            max-width: 35%;
+            padding: calcRem(20px);
+        }
+    }
+
+    @include media-breakpoint-down(md) {
+
+        &__main {
+            padding: calcRem(100px) 0 calcRem(50px);
+            background: $light-grey;
+        }
+
+        &__actions {
+            text-align: center;
+
+            span {
+                > a {
+                    display: block;
+                    font-size: 1.2rem;
+                }
+            }
+        }
+    }
+}

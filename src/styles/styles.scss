@@ -1,0 +1,93 @@
+@charset "UTF-8";
+/**
+ * QATAR website style
+ *
+ * by Edgar Carrasco - front end developer on CCG
+ * edgar@creativecoregroup.com
+ *
+ * Style Methodology: BEM
+ * Component Framework: Material Design
+ *
+ * Global fonts: Lato 400
+ * Font on title: Ubuntu Bold
+ * Font on text: Ubuntu Regular
+ *
+ * Colors:
+ * - Primary: #ff3c00
+ * - secondary: #20232d
+ * - background: #f6f6f6
+ * - text: #414346
+ * - title: #333943
+ */
+
+// 1. Configuration and helpers
+@import
+'abstracts/variables',
+'abstracts/config',
+'abstracts/functions',
+'abstracts/mixins';
+
+// 2. Vendors
+/**
+ * Empty
+ */
+
+// 3. Base stuff
+@import
+'base/base',
+'base/fonts',
+'base/helpers',
+'base/_normalize.css',
+'base/typography';
+
+// 4. Layout-related sections
+@import
+'layouts/cart',
+'layouts/checkout',
+'layouts/contact',
+'layouts/cover',
+'layouts/features',
+'layouts/filter',
+'layouts/footer',
+'layouts/form',
+'layouts/header',
+'layouts/hero',
+'layouts/main-product',
+'layouts/nav-menu',
+'layouts/not-found',
+'layouts/order',
+'layouts/product',
+'layouts/product-gallery',
+'layouts/products',
+'layouts/quick-actions',
+'layouts/review',
+'layouts/review-section',
+'layouts/section',
+'layouts/shop',
+'layouts/sidebar',
+'layouts/social',
+'layouts/tab',
+'layouts/table';
+
+// 5. Components
+@import
+'components/button',
+'components/columns',
+'components/coupon',
+'components/divider',
+'components/fab',
+'components/headline',
+'components/icons',
+'components/link',
+'components/list',
+'components/paginator',
+'components/radio-button',
+'components/separator',
+'components/snackbar',
+'components/text-field',
+'components/tooltip',
+'components/woocommerce';
+
+// 6. Page-specific styles
+@import
+'pages/home';
